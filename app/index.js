@@ -23,7 +23,7 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
     this.log(this.yeoman);
 
     // replace it with a short and sweet description of your generator
-    this.log(chalk.magenta('This generator will generate a web app project using gulp, bower and angularjs.'));
+    this.log(chalk.magenta('This generator will generate a web app project using Gulp, Bower, AngularJS with Coffeescript, Less and Jade support.'));
 
     var prompts = [];
 
@@ -36,20 +36,20 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('app');
-    this.copy('_app.css', 'app/app.css');
-    this.copy('_app.js','app/app.js');
-    this.copy('_app_controller.js','app/app_controller.js');
-    this.copy('_app_controller_test.js','app/app_controller_test.js');
-    this.copy('_index.html','app/index.html');
+    this.copy('_app.less', 'app/app.less');
+    this.copy('_app.coffee','app/app.coffee');
+    this.copy('_app_controller.coffee','app/app_controller.coffee');
+    this.copy('_app_controller_test.coffee','app/app_controller_test.coffee');
+    this.copy('_index.jade','app/index.jade');
 
     this.mkdir('app/components');
-    this.copy('components/_app_service.js', 'app/components/app_service.js');
-    this.copy('components/_app_service_test.js', 'app/components/app_service_test.js');
+    this.copy('components/_app_service.coffee', 'app/components/app_service.coffee');
+    this.copy('components/_app_service_test.coffee', 'app/components/app_service_test.coffee');
 
     this.mkdir('app/main');
-    this.copy('main/_main.html', 'app/main/main.html');
-    this.copy('main/_main_controller.js', 'app/main/main_controller.js');
-    this.copy('main/_main_controller_test.js', 'app/main/main_controller_test.js');
+    this.copy('main/_main.jade', 'app/main/main.jade');
+    this.copy('main/_main_controller.coffee', 'app/main/main_controller.coffee');
+    this.copy('main/_main_controller_test.coffee', 'app/main/main_controller_test.coffee');
   },
 
   projectfiles: function () {    

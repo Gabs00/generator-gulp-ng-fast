@@ -1,18 +1,18 @@
 {
-  "name": "generator-gulp-ng",
+  "name": "generator-gulp-ng-fast",
   "version": "1.0.0",
-  "description": "Yeoman generator for gulp+angular",
+  "description": "Yeoman generator for gulp+angular+coffee+less+jade",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yeoman/generator-gulp-ng"
+    "url": "git://github.com/rchampourlier/generator-gulp-ng-fast"
   },
   "main": "app/index.js",
-  "repository": "henyojess/generator-gulp-ng",
+  "repository": "rchampourlier/generator-gulp-ng-fast",
   "author": {
-    "name": "Jessie Evangelista",
-    "email": "jessie@henyo.com",
-    "url": "https://github.com/henyojess"
+    "name": "Romain Champourlier",
+    "email": "romain@softr.li",
+    "url": "https://github.com/rchampourlier"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -29,7 +29,10 @@
     "angular",
     "web",
     "app",
-    "front-end"
+    "front-end",
+    "coffee",
+    "less",
+    "jade"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
