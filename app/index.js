@@ -36,20 +36,20 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
 
   app: function () {
     this.mkdir('app');
-    this.copy('_app.less', 'app/app.less');
-    this.copy('_app.coffee','app/app.coffee');
-    this.copy('_app_controller.coffee','app/app_controller.coffee');
-    this.copy('_app_controller_test.coffee','app/app_controller_test.coffee');
-    this.copy('_index.jade','app/index.jade');
+    this.copy('app/_app.less', 'app/app.less');
+    this.copy('app/_app.coffee','app/app.coffee');
+    this.copy('app/_app_controller.coffee','app/app_controller.coffee');
+    this.copy('app/_app_controller_test.coffee','app/app_controller_test.coffee');
+    this.copy('app/_index.jade','app/index.jade');
 
     this.mkdir('app/components');
-    this.copy('components/_app_service.coffee', 'app/components/app_service.coffee');
-    this.copy('components/_app_service_test.coffee', 'app/components/app_service_test.coffee');
+    this.copy('app/components/_app_service.coffee', 'app/components/app_service.coffee');
+    this.copy('app/components/_app_service_test.coffee', 'app/components/app_service_test.coffee');
 
     this.mkdir('app/main');
-    this.copy('main/_main.jade', 'app/main/main.jade');
-    this.copy('main/_main_controller.coffee', 'app/main/main_controller.coffee');
-    this.copy('main/_main_controller_test.coffee', 'app/main/main_controller_test.coffee');
+    this.copy('app/main/_main.jade', 'app/main/main.jade');
+    this.copy('app/main/_main_controller.coffee', 'app/main/main_controller.coffee');
+    this.copy('app/main/_main_controller_test.coffee', 'app/main/main_controller_test.coffee');
   },
 
   projectfiles: function () {    
@@ -57,6 +57,7 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
     this.copy('_bower.json', 'bower.json');    
     this.copy('_gulpfile.js', 'gulpfile.js');
     this.copy('_package.json', 'package.json');
+    this.copy('_karma-unit.js', 'karma-unit.js');
   }
 });
 

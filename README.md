@@ -4,7 +4,7 @@ This is a yeoman generator for an AngularJS project that follows the [Best Pract
 
 Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 
-## DIRECTORY STRUCTURE
+## GENERATED DIRECTORY STRUCTURE
 
     app/
       components/
@@ -26,6 +26,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
     README.md
     bower.json
     gulpgile.js
+    karma-unit.js
     package.json
 
 ## FEATURES 
@@ -39,6 +40,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 - `index.jade`/`index.html` is compiled/copied to `build/index.html`
 - A static server is run at port 9000 with livereload support
 - When any HTML, JS or CSS file in the build folder changes, they are autoreloaded on the browser
+- Karma test runner will automatically run unit tests when relevant files change
 
 -----
 
@@ -48,12 +50,14 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 - npm [http://www.npmjs.org/][3]
 - bower [http://bower.io/][4]
 - gulp.js [http://gulpjs.com/][5]
+- karma-cli [http://karma-runner.github.io/][9]
 
 ## USAGE
 
     npm install -g generator-gulp-ng-fast
-    mkdir my-app && cd my-app && yo gulp-ng
+    mkdir my-app && cd my-app && yo gulp-ng-fast
     gulp
+    karma start karma-unit.js
 
 Then you can open your browser on `http://localhost:9000` and start hacking!
 
@@ -69,3 +73,4 @@ For questions and issues: [https://github.com/rchampourlier/generator-gulp-ng-fa
   [6]: https://github.com/rchampourlier/generator-gulp-ng-fast/issues
   [7]: https://github.com/henyojess/generator-gulp-ng
   [8]: https://github.com/henyojess
+  [9]: http://karma-runner.github.io/

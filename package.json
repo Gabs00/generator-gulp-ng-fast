@@ -1,6 +1,6 @@
 {
   "name": "generator-gulp-ng-fast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yeoman generator for gulp+angular+coffee+less+jade",
   "license": "MIT",
   "repository": {
