@@ -22,7 +22,7 @@ gulp.task('templates', function() {
   // build/template.js
   gulp.src(['!./app/index.jade', '!./app.index.html',
       './app/**/*.html', './app/**/*.jade'])
-      .pipe(gulpif(/[.]jade$/, jade()))
+      .pipe(gulpif(/[.]jade$/, jade().on('error', gutil.log))
       .pipe(tplCache('templates.js',{standalone:true}))
       .pipe(gulp.dest('./build'));
 });
@@ -31,7 +31,7 @@ gulp.task('css', function() {
   // concatenate compiled Less and CSS
   // into build/app.css
   gulp.src(['./app/**/*.less', './app/**/*.css'])
-    .pipe(gulpif(/[.]less$/, less()))    
+    .pipe(gulpif(/[.]less$/, less().on('error', gutil.log))    
     .pipe(concat('app.css'))
     .pipe(gulp.dest('./build'));
 });
@@ -55,7 +55,7 @@ gulp.task('vendorCSS', function() {
 
 gulp.task('index', function() {
   gulp.src(['./app/index.jade', './app/index.html'])
-    .pipe(gulpif(/[.]jade$/, jade()))
+    .pipe(gulpif(/[.]jade$/, jade().on('error', gutil.log))
     .pipe(gulp.dest('./build'));
 });
 
