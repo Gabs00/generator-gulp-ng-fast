@@ -32,7 +32,8 @@
     "front-end",
     "coffee",
     "less",
-    "jade"
+    "jade",
+    "karma"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
