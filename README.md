@@ -52,10 +52,12 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
 - gulp.js [http://gulpjs.com/][5]
 - karma-cli [http://karma-runner.github.io/][9]
 
-## USAGE
+## Usage
 
     npm install -g generator-gulp-ng-fast
     mkdir my-app && cd my-app && yo gulp-ng-fast
+    npm install
+    npm install -g karma-cli
     gulp
     karma start karma-unit.js
 
