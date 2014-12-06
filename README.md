@@ -19,7 +19,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
       app_controller.js
       app_controller_test.js
       index.html
-    bower_components/    
+    bower_components/
     node_modules/
     .bowerrc
     .gitignore
@@ -29,7 +29,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
     karma-unit.js
     package.json
 
-## FEATURES 
+## FEATURES
 
 - Follows the recommended best practice project structure for AngularJS
 - All Coffee/JS files in the app folder are compiled and concatenated into `build/app.js`
@@ -58,6 +58,7 @@ Uses Gulp (now I'm convinced by JS build tools!), Bower and NPM.
     mkdir my-app && cd my-app && yo gulp-ng-fast
     npm install
     npm install -g karma-cli
+    bower install
     gulp
     karma start karma-unit.js
 

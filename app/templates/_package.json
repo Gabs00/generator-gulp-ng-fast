@@ -1,20 +1,20 @@
 {
   "name": "<%= _.slugify(appname) %>",
-  "version": "0.0.0",  
-  "main": "app.js",  
+  "version": "0.0.0",
+  "main": "app.js",
   "devDependencies": {
-    "gulp": "~3.5.5",
-    "gulp-concat": "~2.1.7",
-    "gulp-jshint": "~1.5.0",
-    "gulp-angular-templatecache": "^1.1.0",
-    "gulp-connect": "^1.0.7",
-    "gulp-coffee": "~1.4.1",
-    "gulp-util": "~2.2.14",
-    "gulp-if": "~0.0.5",
-    "gulp-jade": "~0.4.2",
-    "gulp-less": "~1.2.3",
-    "karma": "^0.12.1",
-    "karma-jasmine": "^0.1.5",
-    "karma-chrome-launcher": "^0.1.2"
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-jshint": "latest",
+    "gulp-angular-templatecache": "latest",
+    "gulp-webserver": "latest",
+    "gulp-coffee": "latest",
+    "gulp-util": "latest",
+    "gulp-if": "latest",
+    "gulp-jade": "latest",
+    "gulp-less": "latest",
+    "karma": "latest",
+    "karma-jasmine": "latest",
+    "karma-chrome-launcher": "latest"
   }
 }
